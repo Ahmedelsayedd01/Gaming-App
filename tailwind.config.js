@@ -5,10 +5,12 @@ module.exports = {
     extend: {
       screens: {
         sm: "320px",
-        // => @media (min-width: 640px) { ... }
+        // => @media (min-width: 320px) { ... }
+        sl: "450px",
+        // => @media (min-width: 4500px) { ... }
 
         md: "990px",
-        // => @media (min-width: 768px) { ... }
+        // => @media (min-width: 990px) { ... }
 
         lg: "1024px",
         // => @media (min-width: 1024px) { ... }
@@ -18,6 +20,9 @@ module.exports = {
 
         "2xl": "1536px",
         // => @media (min-width: 1536px) { ... }
+      },
+      backgroundImage: {
+        "header-pattern": "url('/src/assets/images/banner-bg.jpg')",
       },
     },
     fontFamily: {
