@@ -1,11 +1,12 @@
 import React from "react";
+import Header from "../components/Header";
 import Nav from "../components/Nav";
 
 const Home = () => {
   return (
     <>
-      <Nav className="" />
-      <div className="w-10/12 mx-auto"></div>
+      <Nav />
+      <Header />
     </>
   );
 };
