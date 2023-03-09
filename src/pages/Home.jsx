@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Nav from "../components/Nav";
+import SectionLibrary from "../components/SectionLibrary";
 import SectionRight from "../components/SectionRight";
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
           {/* casteism Section */}
           <Header />
           <SectionRight />
+          <SectionLibrary />
         </div>
       </div>
     </>
