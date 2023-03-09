@@ -20,9 +20,9 @@ const Nav = () => {
     setClose(true);
   };
   return (
-    <nav className=" ">
-      <div className="relative flex items-center sm:flex-col md:flex-row mx-auto md:w-11/12  sm:w-full  md:px-0  justify-between">
-        <div className="flex items-center sm:w-full justify-between sm:bg-[#f7f7f7] md:bg-transparent sm:px-6 py-4 z-20 mx-auto">
+    <nav className=" sm:sticky md:relative top-0">
+      <div className="relative flex items-center sm:flex-col md:flex-row mx-auto md:w-10/12  sm:w-full  md:px-0  justify-between">
+        <div className="flex items-center sm:w-full justify-between sm:bg-[#f7f7f7] md:bg-transparent sm:px-6 md:px-0 py-4 z-50 mx-auto">
           <Link
             to={"/"}
             className=" md:border-r md:border-[#27292a] pr-2 md:pr-14"
@@ -43,16 +43,16 @@ const Nav = () => {
             <HiMenuAlt3
               className={
                 open
-                  ? "text-black text-4xl cursor-pointer md:hidden"
-                  : "hidden text-black text-4xl cursor-pointer md:hidden"
+                  ? "text-[#ec6090] text-4xl cursor-pointer md:hidden"
+                  : "hidden text-[#ec6090] text-4xl cursor-pointer md:hidden"
               }
               onClick={toggle}
             />
             <AiOutlineClose
               className={
                 close
-                  ? "hidden text-black text-4xl cursor-pointer md:hidden"
-                  : "text-black text-4xl cursor-pointer md:hidden"
+                  ? "hidden text-[#ec6090] text-4xl cursor-pointer md:hidden"
+                  : "text-[#ec6090] text-4xl cursor-pointer md:hidden"
               }
               onClick={toggle2}
             />
@@ -97,7 +97,7 @@ const Nav = () => {
 
         {close === false && (
           <div
-            className={`{" absolute  flex-col bg-white w-10/12  md:hidden transition-transform ease-in-out duration-300 z-10" ${
+            className={`{" absolute transition-all ease-in-out duration-700 flex-col bg-white rounded-br-3xl rounded-bl-3xl w-10/12  md:hidden z-10" ${
               !close ? " translate-y-20 " : " -translate-y-96 "
             }}`}
           >
@@ -127,7 +127,7 @@ const Nav = () => {
             </NavLink>
             <NavLink
               to={"/profile"}
-              className="flex items-center justify-center text-[#666] font-medium transition-all ease-in-out duration-300 hover:text-[#e75e8d] focus:text-[#e75e8d] py-6 border-b w-full"
+              className="flex items-center h-full justify-center rounded-3xl bg-[#e75e8d] text-white font-medium transition-all ease-in-out duration-300 hover:text-[#e75e8d] hover:bg-white focus:text-[#e75e8d] py-6 border-b w-full"
             >
               Profile
             </NavLink>
