@@ -8,7 +8,7 @@
     @apply bg-[#1f2122] font-poppins text-white;
   }
   .btn {
-    @apply bg-[#e75e8d] text-white rounded-3xl font-normal py-2 px-7 hover:bg-white hover:text-[#e75e8d] transition-all ease-in-out duration-300;
+    @apply bg-[#e75e8d] text-white rounded-3xl font-normal py-3 px-7 hover:bg-white hover:text-[#e75e8d] transition-all ease-in-out duration-300;
   }
 }
 ::placeholder {
