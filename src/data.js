@@ -86,7 +86,8 @@ export const Library = [
     title: "Sandbox",
     date: "24/08/2036",
     hours: "634 H 22 Mins",
-    currently: "Downloaded",
+    des: "currently",
+    download: "Downloaded",
   },
   {
     id: 2,
@@ -95,7 +96,8 @@ export const Library = [
     title: "Sandbox",
     date: "22/06/2036",
     hours: "740 H 52 Mins",
-    currently: "Downloaded",
+    des: "currently",
+    download: "Downloaded",
   },
   {
     id: 3,
@@ -104,6 +106,7 @@ export const Library = [
     title: "Sandbox",
     date: "21/04/2036",
     hours: "892 H 14 Mins",
-    currently: "Downloaded",
+    des: "currently",
+    download: "Downloaded",
   },
 ];
