@@ -7,8 +7,8 @@ const Home = () => {
   return (
     <>
       <Nav />
-      <div className="w-[85%] mx-auto mt-4">
-        <div className="bg-[#27292a] rounded-3xl mx-auto px-8 sl:p-14">
+      <div className="w-11/12 mx-auto mt-4">
+        <div className="bg-[#27292a] rounded-3xl mx-auto sm:px-6 sl:p-14">
           {/* casteism Section */}
           <Header />
           <SectionRight />
