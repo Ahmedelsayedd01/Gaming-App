@@ -12,14 +12,14 @@ const SectionLibrary = () => {
         <div className="flex flex-col justify-around gap-2 w-full mb-8">
           {Library.map((item) => (
             <div
-              className="grid sl:grid-rows-3 sl:grid-cols-2 w-full md:grid-rows-1 md:grid-cols-6 place-items-center  bg-transparent border-b border-[#404345] py-6"
+              className="grid sm:grid-rows-3 sm:grid-cols-2 sl:grid-rows-2 sl:grid-cols-3 md:grid-rows-1 md:grid-cols-6 w-full place-items-center  bg-transparent border-b border-[#404345] py-6"
               key={item.id}
             >
               <div className="flex items-center md:justify-start sm:justify-center  w-full">
                 <img
                   src={item.image}
                   alt=""
-                  className="rounded-3xl bg-cover bg-center sm:w-2/6 md:w-auto"
+                  className="rounded-3xl bg-cover bg-center w-auto"
                 />
               </div>
               <div className="gap-1 sm:mt-2 sl:mt-1 md:mt-0 text-white text-base font-bold w-full flex flex-col sm:items-center md:items-start">
