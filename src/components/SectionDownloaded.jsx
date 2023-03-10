@@ -8,7 +8,7 @@ const SectionDownloaded = () => {
   return (
     <div className="bg-[#1f2122] rounded-3xl mx-auto p-8">
       <div className="w-full flex flex-col items-center justify-center">
-        <div className="flex w-full sl:flex-wrap pt-4  items-start sm:text-3xl font-bold">
+        <div className="flex w-full sl:flex-wrap pb-4  items-start sm:text-3xl font-bold">
           <h3 className="mr-1 underline decoration-2">Top</h3>
           <h4 className="text-[#ec6090]">Downloaded</h4>
         </div>
@@ -61,7 +61,7 @@ const SectionDownloaded = () => {
             </div>
           ))}
         </div>
-        <div className="py-8">
+        <div className="pt-8 pb-4">
           <Link
             to={"/profile"}
             className="text-xl text-[#e75e8d] font-semibold hover:text-white transition-all ease-in-out duration-300"
