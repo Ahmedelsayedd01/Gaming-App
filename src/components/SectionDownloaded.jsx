@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 
 const SectionDownloaded = () => {
   return (
-    <div className="flex items-center justify-center flex-col bg-[#1f2122] rounded-3xl mx-auto">
-      <div className="px-5 w-full flex flex-col items-center justify-center">
+    <div className="bg-[#1f2122] rounded-3xl mx-auto p-8">
+      <div className="w-full flex flex-col items-center justify-center">
         <div className="flex w-full sl:flex-wrap pt-4  items-start sm:text-3xl font-bold">
           <h3 className="mr-1 underline decoration-2">Top</h3>
           <h4 className="text-[#ec6090]">Downloaded</h4>
