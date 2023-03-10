@@ -20,9 +20,9 @@ const Nav = () => {
     setClose(true);
   };
   return (
-    <nav className=" sm:sticky md:relative top-0">
+    <nav className=" sm:sticky md:relative top-0 z-50">
       <div className="relative flex items-center sm:flex-col md:flex-row mx-auto md:w-10/12  sm:w-full  md:px-0  justify-between">
-        <div className="flex items-center sm:w-full justify-between sm:bg-[#f7f7f7] md:bg-transparent sm:px-6 md:px-0 py-4 z-50 mx-auto">
+        <div className="flex items-center sm:w-full justify-between sm:bg-[#f7f7f7] md:bg-transparent sm:px-6 md:px-0 py-4  mx-auto">
           <Link
             to={"/"}
             className=" md:border-r md:border-[#27292a] pr-2 md:pr-14"
