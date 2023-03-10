@@ -1,12 +1,9 @@
 import React from "react";
-import Nav from "../components/Nav";
 import SectionGames from "../components/SectionGames";
-import Footer from "../components/Footer";
 import SectionDownloaded from "../components/SectionDownloaded";
 const Browse = () => {
   return (
     <>
-      <Nav />
       <div className="w-10/12 mx-auto mt-4">
         <div className="bg-[#27292a] rounded-3xl mx-auto sm:px-6 sl:p-12">
           {/* casteism Section */}
@@ -19,7 +16,6 @@ const Browse = () => {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
     </>
   );
