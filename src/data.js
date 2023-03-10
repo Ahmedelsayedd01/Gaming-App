@@ -12,6 +12,10 @@ import Library1 from "./assets/images/game-01.jpg";
 import Library2 from "./assets/images/game-02.jpg";
 import Library3 from "./assets/images/game-03.jpg";
 
+import Featured1 from "./assets/images/featured-01.jpg";
+import Featured2 from "./assets/images/featured-02.jpg";
+import Featured3 from "./assets/images/featured-03.jpg";
+
 export const RightNow = [
   {
     id: 1,
@@ -108,5 +112,60 @@ export const Library = [
     hours: "892 H 14 Mins",
     des: "currently",
     download: "Downloaded",
+  },
+];
+export const FeaturedGames = [
+  {
+    id: 1,
+    image: Featured1,
+    streaming: "2.4k streaming",
+    name: "CS-GO",
+    title: "249K Downloads",
+    rate: 4.8,
+    download: "2.3M",
+  },
+  {
+    id: 2,
+    image: Featured2,
+    name: "Gamezer",
+    streaming: "2.4k streaming",
+    title: "249K Downloads",
+    rate: 4.8,
+    download: "2.3M",
+  },
+  {
+    id: 3,
+    image: Featured3,
+    name: "Island Rusty",
+    streaming: "2.4k streaming",
+    title: "249K Downloads",
+    rate: 4.8,
+    download: "2.3M",
+  },
+];
+export const TopDownloaded = [
+  {
+    id: 1,
+    image: popular1,
+    name: "Fortnite",
+    title: "Sandbox",
+    rate: 4.8,
+    download: "2.3M",
+  },
+  {
+    id: 2,
+    image: popular4,
+    name: "CS-GO",
+    title: "Legendary",
+    rate: 4.8,
+    download: "2.3M",
+  },
+  {
+    id: 3,
+    image: popular2,
+    name: "Pubg",
+    title: "Battle S",
+    rate: 4.8,
+    download: "2.3M",
   },
 ];
