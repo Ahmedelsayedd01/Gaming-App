@@ -10,7 +10,7 @@ const Footer = () => {
         </li>
         <li className="text-lg font-light">
           Design:
-          <span className="font-light text-[#ec6090]">Ahmed Elsayed</span>
+          <span className="font-light text-[#ec6090]"> Ahmed Elsayed</span>
         </li>
       </ul>
     </div>
