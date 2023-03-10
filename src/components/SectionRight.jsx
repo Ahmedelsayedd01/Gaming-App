@@ -12,7 +12,7 @@ const SectionRight = () => {
           <h3 className="mr-1 underline decoration-2">Most Popular</h3>
           <h4 className="text-[#ec6090]">Right Now</h4>
         </div>
-        <div className="grid sm:grid-cols-2  md:grid-cols-4 gap-6 w-full mb-8">
+        <div className="grid sm:grid-cols-1 sl:grid-cols-2  md:grid-cols-4 gap-6 w-full mb-8">
           {RightNow.map((card) => (
             <div
               className="flex flex-col items-center justify-center bg-[#27292a] rounded-3xl py-8 px-4 mb-7 "
