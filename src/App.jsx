@@ -1,5 +1,7 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Footer from "./components/Footer";
+import Nav from "./components/Nav";
 import Browse from "./pages/Browse";
 import Details from "./pages/Details";
 import Home from "./pages/Home";
@@ -9,23 +11,53 @@ import Streams from "./pages/Streams";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: (
+      <>
+        <Nav />
+        <Home />
+        <Footer />
+      </>
+    ),
   },
   {
     path: "/browse",
-    element: <Browse />,
+    element: (
+      <>
+        <Nav />
+        <Browse />
+        <Footer />
+      </>
+    ),
   },
   {
     path: "/details",
-    element: <Details />,
+    element: (
+      <>
+        <Nav />
+        <Details />
+        <Footer />
+      </>
+    ),
   },
   {
     path: "/streams",
-    element: <Streams />,
+    element: (
+      <>
+        <Nav />
+        <Streams />
+        <Footer />
+      </>
+    ),
   },
   {
     path: "/profile",
-    element: <Profile />,
+    element: (
+      <>
+        <Nav />
+        <Profile />
+        <Footer />
+      </>
+    ),
   },
 ]);
 function App() {
