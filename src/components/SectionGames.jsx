@@ -2,10 +2,11 @@ import React from "react";
 import { FeaturedGames } from "../data";
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 
-import { Navigation, A11y } from "swiper";
+import { Navigation, A11y, Autoplay } from "swiper";
 
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/autoplay";
 
 // import { Link } from "react-router-dom";
 import { GrNext } from "react-icons/gr";
@@ -15,28 +16,38 @@ import { FaDownload } from "react-icons/fa";
 const SectionGames = () => {
   const swiper = useSwiper();
   return (
-    <div className=" bg-[#1f2122] rounded-3xl mx-auto p-8">
+    <div className=" bg-[#1f2122] rounded-3xl mx-auto p-8 sm:mb-14 md:mb-0">
       <div className="w-full flex flex-col items-center justify-center">
-        <div className="flex py-4 mb-3 items-start  w-full text-3xl font-bold">
+        <div className="flex pb-4 mb-3 items-start  w-full text-3xl font-bold">
           <h3 className="mr-1 underline decoration-2">Featured</h3>
           <h4 className="text-[#ec6090]">Games</h4>
           <div className=" w-full flex justify-end items-center">
-            <span>2</span>
+            
           </div>
         </div>
-
-        <div className="w-full ">
+        <div className="w-full overflow-hidden ">
           <Swiper
-            modules={[Navigation, A11y]}
+            modules={[Navigation, A11y, Autoplay]}
             spaceBetween={30}
-            slidesPerView={3}
+            slidesPerView={2}
             navigation
-            onSlideChange={() => console.log("slide change")}
+            breakpoints={{
+              0: { slidesPerView: 1 },
+              740: { slidesPerView: 2 },
+              1270: { slidesPerView: 3 },
+            }}
+            // autoplay={{ delay: 1500 }}
+            // onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
           >
-            {/* <button className="text-red-50 w-full bg-slate-100" onClick={() => swiper.slideNext()}>
-              <GrNext className=""/>
-            </button> */}
+            <div className="flex items-center justify-center">
+              <button
+                className=" text-yellow-300"
+                onClick={() => swiper.slideNext()}
+              >
+                <AiFillStar className="" />
+              </button>
+            </div>
             <div className="">
               {FeaturedGames.map((card) => (
                 <SwiperSlide className="flex hover:cursor-grab" key={card.id}>
@@ -46,7 +57,7 @@ const SectionGames = () => {
                       alt=""
                       className="w-full rounded-3xl bg-cover bg-center"
                     />
-                    <span className="absolute -bottom-8 group-hover:bottom-5 transition-all ease-in-out duration-300 text-[#ec6090] bg-[rgba(31,33,34,0.95)] px-3 py-1 rounded-full text-base font-medium ">
+                    <span className="absolute -bottom-10 group-hover:bottom-5 transition-all ease-in-out duration-300 text-[#ec6090] bg-[rgba(31,33,34,0.95)] px-3 py-1 rounded-full text-base font-medium ">
                       {card.streaming}
                     </span>
                   </div>
