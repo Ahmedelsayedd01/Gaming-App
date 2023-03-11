@@ -16,6 +16,12 @@ import Featured1 from "./assets/images/featured-01.jpg";
 import Featured2 from "./assets/images/featured-02.jpg";
 import Featured3 from "./assets/images/featured-03.jpg";
 
+
+
+import LiveStream1 from "./assets/images/service-01.jpg";
+import LiveStream2 from "./assets/images/service-02.jpg";
+import LiveStream3 from "./assets/images/service-03.jpg";
+
 export const RightNow = [
   {
     id: 1,
@@ -167,5 +173,28 @@ export const TopDownloaded = [
     title: "Battle S",
     rate: 4.8,
     download: "2.3M",
+  },
+];
+export const LiveStream = [
+  {
+    id: 1,
+    image: LiveStream1,
+    name: "Go To Your Profile",
+    title:
+      "Cyborg Gaming is free HTML CSS website template provided by TemplateMo. This is Bootstrap v5.2.0 layout.",
+  },
+  {
+    id: 2,
+    image: LiveStream2,
+    name: "Live Stream Button",
+    title:
+      "If you wish to support us, you can make a small contribution via PayPal to info [at] templatemo.com",
+  },
+  {
+    id: 3,
+    image: LiveStream3,
+    name: "You Are Live",
+    title:
+      "You are not allowed to redistribute this template's downloadable ZIP file on any other template collection website.",
   },
 ];
