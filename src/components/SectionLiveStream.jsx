@@ -12,11 +12,11 @@ const SectionLiveStream = () => {
         <div className="flex gap-5">
           {LiveStream.map((card) => (
             <div
-              className="flex w-full flex-col items-start gap-y-6 p-4 rounded-3xl justify-between bg-black"
+              className="flex w-full flex-col items-start gap-y-6 p-8 rounded-3xl justify-between border border-[#444]"
               key={card.id}
             >
               <img src={card.image} alt="" className="rounded-full" />
-              <div className="">{card.name}</div>
+              <div className="text-xl font-medium">{card.name}</div>
               <div className="">{card.title}</div>
             </div>
           ))}
