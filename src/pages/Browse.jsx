@@ -1,6 +1,7 @@
 import React from "react";
 import SectionGames from "../components/SectionGames";
 import SectionDownloaded from "../components/SectionDownloaded";
+import SectionLiveStream from "../components/SectionLiveStream";
 const Browse = () => {
   return (
     <>
@@ -15,6 +16,7 @@ const Browse = () => {
               <SectionDownloaded />
             </div>
           </div>
+          <SectionLiveStream />
         </div>
       </div>
     </>
