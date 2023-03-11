@@ -6,7 +6,7 @@ const SectionLiveStream = () => {
   return (
     <div className="bg-transparent mx-auto sm:mb-14 md:mb-0">
       <div className="w-full flex flex-col items-center justify-center">
-        <div className=" flex p-12 items-start justify-center  w-full text-3xl font-bold">
+        <div className=" flex py-12 items-start justify-center w-full sm:text-lg sl:text-3xl font-bold">
           <h3 className="mr-1 underline decoration-2">How To Start Your</h3>
           <h4 className="text-[#ec6090]">Live bold Stream</h4>
         </div>
