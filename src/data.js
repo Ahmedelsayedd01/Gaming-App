@@ -186,7 +186,7 @@ export const LiveStream = [
     image: LiveStream2,
     name: "Live Stream Button",
     title:
-      "If you wish to support us, you can make a <em class='small'> small contribution via PayPal</em> to info [at] templatemo.com",
+      "If you wish to support us, you can make a <a href='https://www.paypal.com/eg/home' class='link'> small contribution via PayPal</a> to info [at] templatemo.com",
   },
   {
     id: 3,
