@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { LiveStream } from "../data";
 
 const SectionLiveStream = () => {
@@ -9,7 +10,7 @@ const SectionLiveStream = () => {
           <h3 className="mr-1 underline decoration-2">How To Start Your</h3>
           <h4 className="text-[#ec6090]">Live bold Stream</h4>
         </div>
-        <div className="flex gap-5">
+        <div className="flex sm:flex-col md:flex-row gap-5">
           {LiveStream.map((card) => (
             <div
               className="flex w-full flex-col items-start gap-y-4 p-8 rounded-3xl justify-between border border-[#444]"
@@ -18,10 +19,15 @@ const SectionLiveStream = () => {
               <img src={card.image} alt="" className="rounded-full" />
               <div className="text-xl font-medium">{card.name}</div>
               <div className="text-[#666] text-sm font-normal">
-                <p dangerouslySetInnerHTML={{__html: card.title }}></p>
+                <p dangerouslySetInnerHTML={{ __html: card.title }}></p>
               </div>
             </div>
           ))}
+        </div>
+        <div className="mt-10">
+          <button className="btn">
+            <Link to={"/profile"}>Go To Profile</Link>
+          </button>
         </div>
       </div>
     </div>
