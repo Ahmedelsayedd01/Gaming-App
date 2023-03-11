@@ -14,9 +14,10 @@
 ::placeholder {
   color: #666;
 }
-/* .swiper-button-next{
-  position: absolute;
-  top: 10px;
-  left: 5px;
-  background-color: red;
-} */
+.swiper{
+  /* overflow: auto; */
+  /* background: red; */
+  /* display: flex; */
+  /* position: fixed; */
+  /* border-radius: 25px; */
+}
