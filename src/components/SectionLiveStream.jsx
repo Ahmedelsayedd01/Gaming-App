@@ -7,7 +7,7 @@ const SectionLiveStream = () => {
       <div className="w-full flex flex-col items-center justify-center">
         <div className=" flex p-12 items-start justify-center  w-full text-3xl font-bold">
           <h3 className="mr-1 underline decoration-2">How To Start Your</h3>
-          <h4 className="text-[#ec6090]">Live Stream</h4>
+          <h4 className="text-[#ec6090]">Live bold Stream</h4>
         </div>
         <div className="flex gap-5">
           {LiveStream.map((card) => (
@@ -17,7 +17,9 @@ const SectionLiveStream = () => {
             >
               <img src={card.image} alt="" className="rounded-full" />
               <div className="text-xl font-medium">{card.name}</div>
-              <div className="text-[#666] text-sm font-normal">{card.title}</div>
+              <div className="text-[#666] text-sm font-normal">
+                <p dangerouslySetInnerHTML={{__html: card.title }}></p>
+              </div>
             </div>
           ))}
         </div>
