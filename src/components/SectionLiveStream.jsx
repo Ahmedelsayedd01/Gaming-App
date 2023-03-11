@@ -18,8 +18,11 @@ const SectionLiveStream = () => {
             >
               <img src={card.image} alt="" className="rounded-full" />
               <div className="text-xl font-medium">{card.name}</div>
-              <div className="text-[#666] text-sm font-normal">
-                <p dangerouslySetInnerHTML={{ __html: card.title }}></p>
+              <div className="">
+                <p
+                  dangerouslySetInnerHTML={{ __html: card.title }}
+                  className="flex-wrap w-10/12 text-[#666] text-sm font-normal leading-6"
+                ></p>
               </div>
             </div>
           ))}
