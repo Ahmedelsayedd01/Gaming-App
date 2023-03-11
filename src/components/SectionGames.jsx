@@ -12,7 +12,7 @@ import "swiper/css/autoplay";
 import "swiper/css";
 import { AiFillStar } from "react-icons/ai";
 import { FaDownload } from "react-icons/fa";
-import { SlideNextButton } from "./SlideNextButton";
+import { MdNavigateNext, MdOutlineNavigateBefore } from "react-icons/md";
 const SectionGames = () => {
   return (
     <div className=" bg-[#1f2122] rounded-3xl mx-auto p-8 sm:mb-14 md:mb-0">
@@ -21,6 +21,14 @@ const SectionGames = () => {
           <h3 className="mr-1 underline decoration-2">Featured</h3>
           <h4 className="text-[#ec6090]">Games</h4>
           <div className=" w-full flex justify-end items-center"></div>
+          <div className="flex">
+            <button className="text-2xl text-[#666] hover:text-[#ec6090] transition-all ease-in-out duration-300">
+              <MdOutlineNavigateBefore />
+            </button>
+            <button className="text-2xl text-[#666] hover:text-[#ec6090] transition-all ease-in-out duration-300">
+              <MdNavigateNext />
+            </button>
+          </div>
         </div>
         <div className="w-full relative">
           <Swiper
@@ -34,10 +42,9 @@ const SectionGames = () => {
               740: { slidesPerView: 2 },
               1270: { slidesPerView: 3 },
             }}
-            // autoplay={{ delay: 1500 }}
+            autoplay={{ delay: 1300 }}
             className=""
           >
-            <SlideNextButton />
             <div className="flex items-center justify-center"></div>
             <div className="">
               {FeaturedGames.map((card) => (
