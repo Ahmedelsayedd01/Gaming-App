@@ -10,7 +10,7 @@
   .btn {
     @apply bg-[#e75e8d] text-white rounded-3xl font-normal py-3 px-7 hover:bg-white hover:text-[#e75e8d] transition-all ease-in-out duration-300;
   }
-  .small {
+  .link {
     @apply text-sm  text-white font-semibold hover:text-[#e75e8d] transition-all ease-in-out duration-300;
   }
 }
