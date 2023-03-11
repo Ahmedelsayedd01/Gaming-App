@@ -16,8 +16,6 @@ import Featured1 from "./assets/images/featured-01.jpg";
 import Featured2 from "./assets/images/featured-02.jpg";
 import Featured3 from "./assets/images/featured-03.jpg";
 
-
-
 import LiveStream1 from "./assets/images/service-01.jpg";
 import LiveStream2 from "./assets/images/service-02.jpg";
 import LiveStream3 from "./assets/images/service-03.jpg";
