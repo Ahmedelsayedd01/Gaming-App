@@ -11,7 +11,7 @@
     @apply bg-[#e75e8d] text-white rounded-3xl font-normal py-3 px-7 hover:bg-white hover:text-[#e75e8d] transition-all ease-in-out duration-300;
   }
   .btn-s {
-    @apply bg-[#e75e8d] text-white rounded-3xl font-light text-sm py-1 px-2 hover:bg-white hover:text-[#e75e8d] transition-all ease-in-out duration-300;
+    @apply bg-[#e75e8d] text-white rounded-3xl font-light text-sm py-[1px] px-2 hover:bg-white hover:text-[#e75e8d] transition-all ease-in-out duration-300;
   }
   .link {
     @apply text-sm  text-white font-semibold hover:text-[#e75e8d] transition-all ease-in-out duration-300;
