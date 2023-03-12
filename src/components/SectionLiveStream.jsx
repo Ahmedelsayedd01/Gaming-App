@@ -6,9 +6,9 @@ const SectionLiveStream = () => {
   return (
     <div className="bg-transparent mx-auto sm:mb-14 md:mb-0">
       <div className="w-full flex flex-col items-center justify-center">
-        <div className=" flex py-12 items-start justify-center w-full sm:text-lg sl:text-4xl font-bold">
+        <div className=" flex  py-12 items-start justify-center w-full sm:text-2xl sl:text-4xl flex-wrap font-bold">
           <h3 className="mr-1 underline decoration-2">How To Start Your</h3>
-          <h4 className="text-[#ec6090]">Live bold Stream</h4>
+          <h4 className="text-[#ec6090]">Live  Stream</h4>
         </div>
         <div className="flex sm:flex-col md:flex-row gap-5">
           {LiveStreamContent.map((card) => (
