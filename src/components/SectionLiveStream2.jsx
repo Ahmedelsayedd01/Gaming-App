@@ -1,6 +1,7 @@
 import React from "react";
 import { BiCheck } from "react-icons/bi";
 import { FaRegEye } from "react-icons/fa";
+import { IoLogoGameControllerA } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { LiveStreamGames } from "../data";
 
@@ -16,25 +17,38 @@ const SectionLiveStream2 = () => {
           {LiveStreamGames.map((card) => (
             <div className="w-full h-full" key={card.id}>
               {/* Top Div */}
-              <div className="relative">
+              <div className="relative group">
                 <img
                   src={card.image}
                   alt=""
                   className="rounded-3xl bg-cover bg-center w-full"
                 />
-                <div className="absolute top-4 right-5">
-                  <h3 className="btn-s">Live</h3>
-                </div>
-                <div className="absolute bottom-4 w-full flex items-center justify-center gap-x-3">
-                  <h3 className="btn-s flex items-center justify-center">
-                    <span>
-                      <FaRegEye />
-                    </span>
-                    1.2K
-                  </h3>
-                  <h3 className="btn-s">
-                    <span></span>CS-GO
-                  </h3>
+                <div className="opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-500">
+                  <div className="absolute top-4 right-5">
+                    <Link to={"/browse"} className="btn-s text-">
+                      Live
+                    </Link>
+                  </div>
+                  <div className="absolute bottom-4 w-full flex items-center justify-center gap-x-3">
+                    <Link
+                      to={"/browse"}
+                      className="btn-s flex items-center justify-center gap-x-1"
+                    >
+                      <span className="text-xl">
+                        <FaRegEye />
+                      </span>
+                      1.2K
+                    </Link>
+                    <Link
+                      to={"/browse"}
+                      className="btn-s flex items-center justify-center gap-x-1"
+                    >
+                      <span className="text-2xl">
+                        <IoLogoGameControllerA />
+                      </span>
+                      CS-GO
+                    </Link>
+                  </div>
                 </div>
               </div>
               {/* Bottom Div */}
