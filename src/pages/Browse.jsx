@@ -12,7 +12,7 @@ const Browse = () => {
             <div className="sm:w-full md:w-4/6">
               <SectionGames />
             </div>
-            <div className="sm:w-full md:w-2/6">
+            <div className="sm:w-full md:w-2/6z">
               <SectionDownloaded />
             </div>
           </div>
