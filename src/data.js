@@ -20,6 +20,16 @@ import LiveStream1 from "./assets/images/service-01.jpg";
 import LiveStream2 from "./assets/images/service-02.jpg";
 import LiveStream3 from "./assets/images/service-03.jpg";
 
+import LiveStreamGames1 from "./assets/images/stream-01.jpg";
+import LiveStreamGames2 from "./assets/images/stream-02.jpg";
+import LiveStreamGames3 from "./assets/images/stream-03.jpg";
+import LiveStreamGames4 from "./assets/images/stream-04.jpg";
+
+import profile1 from "./assets/images/avatar-01.jpg";
+import profile2 from "./assets/images/avatar-02.jpg";
+import profile3 from "./assets/images/avatar-03.jpg";
+import profile4 from "./assets/images/avatar-04.jpg";
+
 export const RightNow = [
   {
     id: 1,
