@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { LiveStream } from "../data";
+import { LiveStreamContent } from "../data";
 
 const SectionLiveStream = () => {
   return (
@@ -11,7 +11,7 @@ const SectionLiveStream = () => {
           <h4 className="text-[#ec6090]">Live bold Stream</h4>
         </div>
         <div className="flex sm:flex-col md:flex-row gap-5">
-          {LiveStream.map((card) => (
+          {LiveStreamContent.map((card) => (
             <div
               className="flex w-full flex-col items-start gap-y-4 p-8 rounded-3xl justify-between border border-[#444] transition-all ease-in-out duration-300 hover:border-[#ec6090]"
               key={card.id}
