@@ -6,14 +6,14 @@ const SectionLiveStream = () => {
   return (
     <div className="bg-transparent mx-auto sm:mb-14 md:mb-0">
       <div className="w-full flex flex-col items-center justify-center">
-        <div className=" flex py-12 items-start justify-center w-full sm:text-lg sl:text-3xl font-bold">
+        <div className=" flex py-12 items-start justify-center w-full sm:text-lg sl:text-4xl font-bold">
           <h3 className="mr-1 underline decoration-2">How To Start Your</h3>
           <h4 className="text-[#ec6090]">Live bold Stream</h4>
         </div>
         <div className="flex sm:flex-col md:flex-row gap-5">
           {LiveStream.map((card) => (
             <div
-              className="flex w-full flex-col items-start gap-y-4 p-8 rounded-3xl justify-between border border-[#444]"
+              className="flex w-full flex-col items-start gap-y-4 p-8 rounded-3xl justify-between border border-[#444] transition-all ease-in-out duration-300 hover:border-[#ec6090]"
               key={card.id}
             >
               <img src={card.image} alt="" className="rounded-full" />
