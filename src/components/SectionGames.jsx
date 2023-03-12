@@ -15,7 +15,7 @@ import { FaDownload } from "react-icons/fa";
 import { MdNavigateNext, MdOutlineNavigateBefore } from "react-icons/md";
 const SectionGames = () => {
   return (
-    <div className=" bg-[#1f2122] rounded-3xl mx-auto p-8 sm:mb-14 md:mb-0">
+    <div className=" bg-[#1f2122] rounded-3xl mx-auto p-7 sm:mb-14 md:mb-0">
       <div className="relative w-full flex flex-col items-center justify-center">
         <div className=" flex pb-4 mb-3 items-start justify-between  w-full text-3xl font-bold">
           <div className="flex">
@@ -44,13 +44,12 @@ const SectionGames = () => {
               1270: { slidesPerView: 3 },
             }}
             autoplay={{ delay: 1300 }}
-            className=""
+            className=" rounded-3xl hover:cursor-grab flex"
           >
-            <div className="flex items-center justify-center"></div>
             <div className="">
               {FeaturedGames.map((card) => (
-                <SwiperSlide className="flex hover:cursor-grab" key={card.id}>
-                  <div className="relative overflow-hidden flex items-center justify-center group transition-all ease-in-out duration-300">
+                <SwiperSlide key={card.id}>
+                  <div className="relative overflow-hidden flex items-center justify-center group transition-all ease-in-out duration-300 ">
                     <img
                       src={card.image}
                       alt=""
