@@ -1,5 +1,6 @@
 import React from "react";
 import { BiCheck } from "react-icons/bi";
+import { FaRegEye } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { LiveStreamGames } from "../data";
 
@@ -21,12 +22,15 @@ const SectionLiveStream2 = () => {
                   alt=""
                   className="rounded-3xl bg-cover bg-center w-full"
                 />
-                <div className="absolute top-0">
-                  <h3>Live</h3>
+                <div className="absolute top-4 right-5">
+                  <h3 className="btn-s">Live</h3>
                 </div>
-                <div className="flex items-center justify-between absolute bottom-0">
-                  <h3 className="btn-s">
-                    <span></span>1.2K
+                <div className="absolute bottom-4 w-full flex items-center justify-center gap-x-3">
+                  <h3 className="btn-s flex items-center justify-center">
+                    <span>
+                      <FaRegEye />
+                    </span>
+                    1.2K
                   </h3>
                   <h3 className="btn-s">
                     <span></span>CS-GO
@@ -37,7 +41,11 @@ const SectionLiveStream2 = () => {
               <div className="pt-6 flex w-full justify-start items-start">
                 {/* Left Div */}
                 <div className="">
-                  <img src={card.profileImg} alt="" className="rounded-full" />
+                  <img
+                    src={card.profileImg}
+                    alt=""
+                    className="rounded-full bg-cover bg-center w-14"
+                  />
                 </div>
                 {/* Right Div */}
                 <div className="flex flex-col ml-3 items-start justify-start">
