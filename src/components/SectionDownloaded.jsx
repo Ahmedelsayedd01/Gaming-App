@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 
 const SectionDownloaded = () => {
   return (
-    <div className="bg-[#1f2122] rounded-3xl mx-auto">
-      <div className="w-full flex flex-col items-center justify-center p-8 ">
+    <div className="bg-[#1f2122] rounded-3xl mx-auto py-8 px-6">
+      <div className="w-full flex flex-col items-center justify-center ">
         <div className="flex w-full sl:flex-wrap pb-4  items-start sm:text-4xl font-bold ">
           <h3 className="mr-1 underline decoration-2">Top</h3>
           <h4 className="text-[#ec6090]">Downloaded</h4>
@@ -16,7 +16,7 @@ const SectionDownloaded = () => {
         <div className="">
           {TopDownloaded.map((card) => (
             <div
-              className="grid sm:grid-cols-3 sm:grid-rows-1 md:grid-cols-3 md:grid-rows-1 py-7 gap-x-2 w-full place-items-center  border-b border-[#404345]"
+              className="grid sm:grid-cols-3 sm:grid-rows-1 md:grid-cols-3 md:grid-rows-1 py-5 gap-x-2 w-full place-items-center border-b border-[#404345]"
               key={card.id}
             >
               <div className="w-full">
