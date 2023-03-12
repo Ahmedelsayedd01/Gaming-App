@@ -173,7 +173,7 @@ export const TopDownloaded = [
     download: "2.3M",
   },
 ];
-export const LiveStream = [
+export const LiveStreamContent = [
   {
     id: 1,
     image: LiveStream1,
@@ -194,5 +194,35 @@ export const LiveStream = [
     name: "You Are Live",
     title:
       "You are not allowed to redistribute this template's downloadable ZIP file on any other template collection website.",
+  },
+];
+export const LiveStreamGames = [
+  {
+    id: 1,
+    image: LiveStreamGames1,
+    profileImg: profile1,
+    name: "KenganC",
+    title: "Just Talking With Fans",
+  },
+  {
+    id: 2,
+    image: LiveStreamGames2,
+    profileImg: profile2,
+    name: "LunaMa",
+    title: "CS-GO 36 Hours Live Stream",
+  },
+  {
+    id: 3,
+    image: LiveStreamGames3,
+    profileImg: profile3,
+    name: "Areluwa",
+    title: "Maybe Nathej Allnight Chillin'",
+  },
+  {
+    id: 4,
+    image: LiveStreamGames4,
+    profileImg: profile4,
+    name: "GangTm",
+    title: "Live Streaming Till Morning",
   },
 ];
