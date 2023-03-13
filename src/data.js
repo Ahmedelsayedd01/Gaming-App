@@ -337,6 +337,7 @@ export const TopStreamers = [
 export const Streamers = [
   {
     id: 1,
+    profileImg:profile1,
     image: Streamers1,
     name: "Kengan Omeg",
     title: "Just Talking With Fans",
@@ -344,42 +345,49 @@ export const Streamers = [
   {
     id: 2,
     image: Streamers2,
+    profileImg:profile2,
     name: "LahutaMalc",
     title: "CS-GO 36 Hours Live Stream",
   },
   {
     id: 3,
     image: Streamers3,
+    profileImg:profile3,
     name: "Areluwa",
     title: "Maybe Nathej Allnight Chillin'",
   },
   {
     id: 4,
     image: Streamers4,
+    profileImg:profile4,
     name: "NewGangTeam",
     title: "Live Streaming Till Morning",
   },
   {
     id: 5,
     image: Streamers5,
+    profileImg:profile1,
     name: "Kengan Omeg",
     title: "Just Talking With Fans",
   },
   {
     id: 6,
     image: Streamers6,
+    profileImg:profile2,
     name: "LahutaMalc",
     title: "CS-GO 36 Hours Live Stream",
   },
   {
     id: 7,
     image: Streamers7,
+    profileImg:profile3,
     name: "Areluwa",
     title: "Maybe Nathej Allnight Chillin'",
   },
   {
     id: 8,
     image: Streamers8,
+    profileImg:profile4,
     name: "NewGangTeam",
     title: "Live Streaming Till Morning",
   },
