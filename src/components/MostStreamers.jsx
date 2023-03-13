@@ -3,7 +3,7 @@ import { BiCheck } from "react-icons/bi";
 import { FaRegEye } from "react-icons/fa";
 import { IoLogoGameControllerA } from "react-icons/io";
 import { Link } from "react-router-dom";
-import { LiveStreamGames } from "../data";
+import { LiveStreamGames, Streamers } from "../data";
 
 const MostStreamers = () => {
   return (
@@ -14,7 +14,7 @@ const MostStreamers = () => {
           <h4 className="text-[#ec6090]">Live Stream</h4>
         </div>
         <div className="w-full gap-5 pb-6 grid sm:grid-cols-1 sl:grid-cols-2 md:grid-cols-4">
-          {LiveStreamGames.map((card) => (
+          {Streamers.map((card) => (
             <div className="w-full h-full" key={card.id}>
               {/* Top Div */}
               <div className="relative group">
