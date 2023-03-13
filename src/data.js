@@ -30,6 +30,13 @@ import profile2 from "./assets/images/avatar-02.jpg";
 import profile3 from "./assets/images/avatar-03.jpg";
 import profile4 from "./assets/images/avatar-04.jpg";
 
+import DetailsItem1 from "./assets/images/game-01.jpg";
+import DetailsItem2 from "./assets/images/game-02.jpg";
+import DetailsItem3 from "./assets/images/game-03.jpg";
+import DetailsItem4 from "./assets/images/game-02.jpg";
+import DetailsItem5 from "./assets/images/game-03.jpg";
+import DetailsItem6 from "./assets/images/game-01.jpg";
+
 export const RightNow = [
   {
     id: 1,
@@ -234,5 +241,55 @@ export const LiveStreamGames = [
     profileImg: profile4,
     name: "GangTm",
     title: "Live Streaming Till Morning",
+  },
+];
+export const DetailsItem = [
+  {
+    id: 1,
+    image: DetailsItem1,
+    name: "Data 2",
+    title: "Sandbox",
+    rate: 4.8,
+    download: "2.3M",
+  },
+  {
+    id: 2,
+    image: DetailsItem2,
+    name: "Data 2",
+    title: "Sandbox",
+    rate: 4.8,
+    download: "2.3M",
+  },
+  {
+    id: 3,
+    image: DetailsItem3,
+    name: "Data 2",
+    title: "Sandbox",
+    rate: 4.8,
+    download: "2.3M",
+  },
+  {
+    id: 4,
+    image: DetailsItem4,
+    name: "Data 2",
+    title: "Sandbox",
+    rate: 4.8,
+    download: "2.3M",
+  },
+  {
+    id: 5,
+    image: DetailsItem5,
+    name: "Data 2",
+    title: "Sandbox",
+    rate: 4.8,
+    download: "2.3M",
+  },
+  {
+    id: 6,
+    image: DetailsItem6,
+    name: "Data 2",
+    title: "Sandbox",
+    rate: 4.8,
+    download: "2.3M",
   },
 ];
