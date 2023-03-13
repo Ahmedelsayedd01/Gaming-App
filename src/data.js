@@ -37,6 +37,15 @@ import DetailsItem4 from "./assets/images/game-02.jpg";
 import DetailsItem5 from "./assets/images/game-03.jpg";
 import DetailsItem6 from "./assets/images/game-01.jpg";
 
+import Streamers1 from "./assets/images/stream-01.jpg";
+import Streamers2 from "./assets/images/stream-02.jpg";
+import Streamers3 from "./assets/images/stream-03.jpg";
+import Streamers4 from "./assets/images/stream-04.jpg";
+import Streamers5 from "./assets/images/stream-05.jpg";
+import Streamers6 from "./assets/images/stream-06.jpg";
+import Streamers7 from "./assets/images/stream-07.jpg";
+import Streamers8 from "./assets/images/stream-08.jpg";
+
 export const RightNow = [
   {
     id: 1,
@@ -323,5 +332,55 @@ export const TopStreamers = [
     number: 5,
     name: "GangTeam",
     image: profile1,
+  },
+];
+export const Streamers = [
+  {
+    id: 1,
+    image: Streamers1,
+    name: "Kengan Omeg",
+    title: "Just Talking With Fans",
+  },
+  {
+    id: 2,
+    image: Streamers2,
+    name: "LahutaMalc",
+    title: "CS-GO 36 Hours Live Stream",
+  },
+  {
+    id: 3,
+    image: Streamers3,
+    name: "Areluwa",
+    title: "Maybe Nathej Allnight Chillin'",
+  },
+  {
+    id: 4,
+    image: Streamers4,
+    name: "NewGangTeam",
+    title: "Live Streaming Till Morning",
+  },
+  {
+    id: 5,
+    image: Streamers5,
+    name: "Kengan Omeg",
+    title: "Just Talking With Fans",
+  },
+  {
+    id: 6,
+    image: Streamers6,
+    name: "LahutaMalc",
+    title: "CS-GO 36 Hours Live Stream",
+  },
+  {
+    id: 7,
+    image: Streamers7,
+    name: "Areluwa",
+    title: "Maybe Nathej Allnight Chillin'",
+  },
+  {
+    id: 8,
+    image: Streamers8,
+    name: "NewGangTeam",
+    title: "Live Streaming Till Morning",
   },
 ];
