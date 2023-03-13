@@ -293,3 +293,35 @@ export const DetailsItem = [
     download: "2.3M",
   },
 ];
+export const TopStreamers = [
+  {
+    id: 1,
+    number: 1,
+    name: "LahutaM",
+    image: profile1,
+  },
+  {
+    id: 2,
+    number: 2,
+    name: "Kengan",
+    image: profile2,
+  },
+  {
+    id: 3,
+    number: 3,
+    name: "Areluwa",
+    image: profile3,
+  },
+  {
+    id: 4,
+    number: 4,
+    name: "Omeg",
+    image: profile4,
+  },
+  {
+    id: 5,
+    number: 5,
+    name: "GangTeam",
+    image: profile1,
+  },
+];
