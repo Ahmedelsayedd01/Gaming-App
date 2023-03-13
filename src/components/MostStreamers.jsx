@@ -25,13 +25,13 @@ const MostStreamers = () => {
                 />
                 <div className="opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-500">
                   <div className="absolute top-4 right-5">
-                    <Link to={"/browse"} className="btn-s text-">
+                    <Link to={"/stream"} className="btn-s text-">
                       Live
                     </Link>
                   </div>
                   <div className="absolute bottom-4 w-full flex items-center justify-center gap-x-3">
                     <Link
-                      to={"/browse"}
+                      to={"/stream"}
                       className="btn-s flex items-center justify-center gap-x-1"
                     >
                       <span className="text-xl">
@@ -40,7 +40,7 @@ const MostStreamers = () => {
                       1.2K
                     </Link>
                     <Link
-                      to={"/browse"}
+                      to={"/stream"}
                       className="btn-s flex items-center justify-center gap-x-1"
                     >
                       <span className="text-2xl">
@@ -82,7 +82,7 @@ const MostStreamers = () => {
 
         <div className="-mb-14">
           <button className="btn">
-            <Link to={"/stream"}>Discover All Streams</Link>
+            <Link to={"/stream"}>Load More Streams</Link>
           </button>
         </div>
       </div>
