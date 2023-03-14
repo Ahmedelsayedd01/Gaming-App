@@ -10,6 +10,8 @@ const Profile = () => {
           <div className="bg-[#1f2122] rounded-3xl mx-auto p-7 pb-0 sm:mb-14 md:mb-0">
             <HeaderProfile />
             <SectionClips />
+          </div>
+          <div className="pt-10">
             <SectionLibrary />
           </div>
 
