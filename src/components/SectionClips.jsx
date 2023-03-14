@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import card from "react-router-dom";
+import { Clips } from "../data";
 
 const SectionClips = () => {
   return (
@@ -10,7 +12,19 @@ const SectionClips = () => {
           <h4 className="text-[#ec6090]">Clips</h4>
         </div>
         <div className="w-full gap-5 pb-6 grid sm:grid-cols-1 sl:grid-cols-2 md:grid-cols-4">
-          
+          {Clips.map((card) => (
+            <div className="">
+              <div className="">
+                <img src={card.image} alt="" />
+              </div>
+              <div className="">
+                <ul>
+                    <li>{card.name}</li>
+                    <li></li>
+                </ul>
+              </div>
+            </div>
+          ))}
         </div>
 
         <div className="">
