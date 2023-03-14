@@ -55,7 +55,7 @@ const SectionClips = () => {
           ))}
         </div>
 
-        <div className="p-6">
+        <div className="p-3">
           <button className="btn">
             <Link to={"/profile"}>Load More Clips</Link>
           </button>
