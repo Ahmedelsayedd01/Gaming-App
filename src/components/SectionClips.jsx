@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import card from "react-router-dom";
 import { Clips } from "../data";
+import { FaPlay, FaRegEye } from "react-icons/fa";
 
 const SectionClips = () => {
   return (
@@ -15,12 +16,31 @@ const SectionClips = () => {
           {Clips.map((card) => (
             <div className="">
               <div className="">
-                <img src={card.image} alt="" />
+                <div className="relative sl:w-8/12">
+                  <img
+                    src={card.image}
+                    alt=""
+                    className="w-full h-full bg-cover bg-center rounded-3xl"
+                  />
+                  <Link
+                    to={"https://www.youtube.com/watch?v=r1b03uKWk_M"}
+                    className="absolute top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2 text-sm text-[#ec6090] bg-white hover:text-white hover:bg-[#ec6090] transition-all ease-in-out duration-500 rounded-full p-4"
+                    target={"_blank"}
+                  >
+                    <FaPlay className="" />
+                  </Link>
+                </div>
               </div>
+
               <div className="">
                 <ul>
-                    <li>{card.name}</li>
-                    <li></li>
+                  <li>{card.name}</li>
+                  <li>
+                    <span className="text-xl">
+                      <FaRegEye />
+                    </span>
+                    {card.number}
+                  </li>
                 </ul>
               </div>
             </div>
