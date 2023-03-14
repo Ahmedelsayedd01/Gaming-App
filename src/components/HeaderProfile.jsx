@@ -26,20 +26,20 @@ const HeaderProfile = () => {
         </Link>
       </div>
       {/* Right */}
-      <div className="grid w-full grid-rows-4 gap-y-8 bg-[#27292a] rounded-3xl p-8 md:pb-0 mb-7">
-        <div className="flex justify-between w-full border-b border-[#4c4d4e]">
+      <div className="grid w-full grid-rows-4 gap-y-2 bg-[#27292a] rounded-3xl px-6 py-2 md:pb-0 mb-7">
+        <div className="flex justify-between items-center w-full border-b border-[#4c4d4e]">
           <h3 className="text-[#666] text-lg font-normal">Games Downloaded</h3>
           <span className="text-[#ec6090]">3</span>
         </div>
-        <div className="flex justify-between w-full border-b border-[#4c4d4e]">
+        <div className="flex justify-between items-center w-full border-b border-[#4c4d4e]">
           <h3 className="text-[#666] text-lg font-normal">Friends Online</h3>
           <span className="text-[#ec6090]">16</span>
         </div>
-        <div className="flex justify-between w-full border-b border-[#4c4d4e]">
+        <div className="flex justify-between items-center w-full border-b border-[#4c4d4e]">
           <h3 className="text-[#666] text-lg font-normal">Live Streams</h3>
           <span className="text-[#ec6090]">None</span>
         </div>
-        <div className="flex justify-between w-full">
+        <div className="flex justify-between items-center w-full">
           <h3 className="text-[#666] text-lg font-normal">Clips</h3>
           <span className="text-[#ec6090]">29</span>
         </div>
