@@ -11,7 +11,7 @@ const Profile = () => {
             <HeaderProfile />
             <SectionClips />
           </div>
-          <div className="pt-10">
+          <div className="">
             <SectionLibrary />
           </div>
 
