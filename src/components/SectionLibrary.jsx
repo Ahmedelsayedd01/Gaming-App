@@ -12,7 +12,7 @@ const SectionLibrary = () => {
         <div className="flex flex-col justify-around  w-full mb-4">
           {Library.map((item) => (
             <div
-              className="grid sm:grid-rows-3 sm:grid-cols-2 sl:grid-rows-2 sl:grid-cols-3 md:grid-rows-1 md:grid-cols-6 w-full place-items-center  bg-transparent border-b border-[#4c4d4e] last:border-none py-6"
+              className="grid sm:grid-rows-3 sm:grid-cols-2 sl:grid-rows-3 sl:grid-cols-2 md:grid-rows-2 md:grid-cols-3 lg:grid-rows-1 lg:grid-cols-6 w-full place-items-center  bg-transparent border-b border-[#4c4d4e] last:border-none py-6"
               key={item.id}
             >
               <div className="flex items-center md:justify-start sm:justify-center  w-full">
