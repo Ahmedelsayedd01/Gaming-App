@@ -46,10 +46,10 @@ import Streamers6 from "./assets/images/stream-06.jpg";
 import Streamers7 from "./assets/images/stream-07.jpg";
 import Streamers8 from "./assets/images/stream-08.jpg";
 
-import SectionClips1 from "./assets/images/clip-01.jpg";
-import SectionClips2 from "./assets/images/clip-02.jpg";
-import SectionClips3 from "./assets/images/clip-03.jpg";
-import SectionClips4 from "./assets/images/clip-04.jpg";
+import Clips1 from "./assets/images/clip-01.jpg";
+import Clips2 from "./assets/images/clip-02.jpg";
+import Clips3 from "./assets/images/clip-03.jpg";
+import Clips4 from "./assets/images/clip-04.jpg";
 
 export const RightNow = [
   {
@@ -397,28 +397,28 @@ export const Streamers = [
     title: "Live Streaming Till Morning",
   },
 ];
-export const SectionClips = [
+export const Clips = [
   {
     id: 1,
-    image: SectionClips1,
+    image: Clips1,
     name: "First Clip",
     number: 250,
   },
   {
     id: 2,
-    image: SectionClips2,
+    image: Clips2,
     name: "First Second Clip",
     number: 183,
   },
   {
     id: 3,
-    image: SectionClips3,
+    image: Clips3,
     name: "Third Clip",
     number: 141,
   },
   {
     id: 4,
-    image: SectionClips4,
+    image: Clips4,
     name: "Fourth Clip",
     number: 91,
   },
