@@ -46,6 +46,11 @@ import Streamers6 from "./assets/images/stream-06.jpg";
 import Streamers7 from "./assets/images/stream-07.jpg";
 import Streamers8 from "./assets/images/stream-08.jpg";
 
+import SectionClips1 from "./assets/images/clip-01.jpg";
+import SectionClips2 from "./assets/images/clip-02.jpg";
+import SectionClips3 from "./assets/images/clip-03.jpg";
+import SectionClips4 from "./assets/images/clip-04.jpg";
+
 export const RightNow = [
   {
     id: 1,
@@ -337,7 +342,7 @@ export const TopStreamers = [
 export const Streamers = [
   {
     id: 1,
-    profileImg:profile1,
+    profileImg: profile1,
     image: Streamers1,
     name: "Kengan Omeg",
     title: "Just Talking With Fans",
@@ -345,50 +350,76 @@ export const Streamers = [
   {
     id: 2,
     image: Streamers2,
-    profileImg:profile2,
+    profileImg: profile2,
     name: "LahutaMalc",
     title: "CS-GO 36 Hours Live Stream",
   },
   {
     id: 3,
     image: Streamers3,
-    profileImg:profile3,
+    profileImg: profile3,
     name: "Areluwa",
     title: "Maybe Nathej Allnight Chillin'",
   },
   {
     id: 4,
     image: Streamers4,
-    profileImg:profile4,
+    profileImg: profile4,
     name: "NewGangTeam",
     title: "Live Streaming Till Morning",
   },
   {
     id: 5,
     image: Streamers5,
-    profileImg:profile1,
+    profileImg: profile1,
     name: "Kengan Omeg",
     title: "Just Talking With Fans",
   },
   {
     id: 6,
     image: Streamers6,
-    profileImg:profile2,
+    profileImg: profile2,
     name: "LahutaMalc",
     title: "CS-GO 36 Hours Live Stream",
   },
   {
     id: 7,
     image: Streamers7,
-    profileImg:profile3,
+    profileImg: profile3,
     name: "Areluwa",
     title: "Maybe Nathej Allnight Chillin'",
   },
   {
     id: 8,
     image: Streamers8,
-    profileImg:profile4,
+    profileImg: profile4,
     name: "NewGangTeam",
     title: "Live Streaming Till Morning",
+  },
+];
+export const SectionClips = [
+  {
+    id: 1,
+    image: SectionClips1,
+    name: "First Clip",
+    number: 250,
+  },
+  {
+    id: 2,
+    image: SectionClips2,
+    name: "First Second Clip",
+    number: 183,
+  },
+  {
+    id: 3,
+    image: SectionClips3,
+    name: "Third Clip",
+    number: 141,
+  },
+  {
+    id: 4,
+    image: SectionClips4,
+    name: "Fourth Clip",
+    number: 91,
   },
 ];
