@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import card from "react-router-dom";
 import { Clips } from "../data";
-import { FaPlay, FaRegEye } from "react-icons/fa";
+import { FaPlay, FaEye } from "react-icons/fa";
 
 const SectionClips = () => {
   return (
@@ -14,9 +13,10 @@ const SectionClips = () => {
         </div>
         <div className="w-full gap-5 pb-6 grid sm:grid-cols-1 sl:grid-cols-2 md:grid-cols-4">
           {Clips.map((card) => (
-            <div className="">
+            <div className="bg-[#27292a] py-8 px-4 rounded-3xl">
+              {/* top */}
               <div className="">
-                <div className="relative sl:w-8/12">
+                <div className="relative ">
                   <img
                     src={card.image}
                     alt=""
@@ -32,14 +32,22 @@ const SectionClips = () => {
                 </div>
               </div>
 
-              <div className="">
-                <ul>
-                  <li>{card.name}</li>
-                  <li>
-                    <span className="text-xl">
-                      <FaRegEye />
-                    </span>
-                    {card.number}
+              {/* bottom */}
+
+              <div className="flex item-center mt-5 ">
+                <ul className="w-full flex items-center justify-between">
+                  <li className="text-white text-base font-bold">
+                    {/* Left */}
+                    {card.name}
+                  </li>
+                  {/* Right */}
+                  <li className="">
+                    <ul className="flex items-center justify-between">
+                      <li className="text-xl text-[#ec6090] mr-1">
+                        <FaEye />
+                      </li>
+                      <li className="font-medium">{card.number}</li>
+                    </ul>
                   </li>
                 </ul>
               </div>
