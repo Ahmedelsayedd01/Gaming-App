@@ -407,7 +407,7 @@ export const Clips = [
   {
     id: 2,
     image: Clips2,
-    name: "First Second Clip",
+    name: "Second Clip",
     number: 183,
   },
   {
