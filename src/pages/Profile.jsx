@@ -1,6 +1,7 @@
 import React from "react";
 import HeaderProfile from "../components/HeaderProfile";
 import SectionClips from "../components/SectionClips";
+import SectionLibrary from "../components/SectionLibrary";
 const Profile = () => {
   return (
     <>
@@ -9,6 +10,7 @@ const Profile = () => {
           <div className="bg-[#1f2122] rounded-3xl mx-auto p-7 pb-0 sm:mb-14 md:mb-0">
             <HeaderProfile />
             <SectionClips />
+            <SectionLibrary />
           </div>
 
           <div className="flex sm:flex-col md:flex-row md:gap-x-5 w-full items-center md:justify-between ">
