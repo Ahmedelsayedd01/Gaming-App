@@ -21,7 +21,7 @@ const Nav = () => {
   };
   return (
     <nav className=" sm:sticky md:relative top-0 z-50">
-      <div className="relative flex items-center sm:flex-col md:flex-row mx-auto md:w-10/12  sm:w-full  md:px-0  justify-between">
+      <div className="relative flex items-center sm:flex-col md:flex-row mx-auto md:w-10/12  sm:w-full  md:px-0  justify-between z-40">
         <div className="flex items-center sm:w-full justify-between sm:bg-[#f7f7f7] md:bg-transparent sm:px-6 md:px-0 py-4  mx-auto">
           <Link
             to={"/"}
@@ -94,12 +94,13 @@ const Nav = () => {
             </NavLink>
           </div>
         </div>
-
+        {/* Mobile Nav */}
         {close === false && (
           <div
-            className={`{" absolute transition-all ease-in-out duration-700 flex-col bg-white rounded-br-3xl rounded-bl-3xl w-10/12  md:hidden z-10" ${
+            className={`{" absolute transition-all ease-in-out duration-700 flex-col bg-white rounded-br-3xl rounded-bl-3xl w-10/12  md:hidden z-10 " ${
               !close ? " translate-y-20 " : " -translate-y-96 "
             }}`}
+            onClick={toggle2}
           >
             <NavLink
               to={"/"}
