@@ -1,4 +1,5 @@
 import React from "react";
+import Title from "./Title";
 import { FeaturedGames } from "../data";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -18,10 +19,7 @@ const SectionGames = () => {
     <div className=" bg-[#1f2122] rounded-3xl mx-auto p-7 sm:mb-14 md:mb-0">
       <div className="relative w-full flex flex-col items-center justify-center">
         <div className=" flex pb-4 mb-3 items-start justify-between  w-full text-3xl font-bold">
-          <div className="flex">
-            <h3 className="mr-1 underline decoration-2">Featured</h3>
-            <h4 className="text-[#ec6090]">Games</h4>
-          </div>
+          <Title Text1="Featured" Text2="Games" />
           <div className="flex">
             <button className="text-2xl text-[#666] hover:text-[#ec6090] transition-all ease-in-out duration-300">
               <MdOutlineNavigateBefore />
@@ -53,7 +51,7 @@ const SectionGames = () => {
                     <img
                       src={card.image}
                       alt=""
-                      className="w-full rounded-3xl bg-cover bg-center"
+                      className="w-full rounded-3xl"
                     />
                     <span className="absolute -bottom-10 group-hover:bottom-5 transition-all ease-in-out duration-300 text-[#ec6090] bg-[rgba(31,33,34,0.95)] px-3 py-1 rounded-full text-base font-medium ">
                       {card.streaming}
@@ -91,7 +89,7 @@ const SectionGames = () => {
                     <img
                       src={card.image}
                       alt=""
-                      className="w-full rounded-3xl bg-cover bg-center"
+                      className="w-full rounded-3xl"
                     />
                     <span className="absolute -bottom-10 group-hover:bottom-5 transition-all ease-in-out duration-300 text-[#ec6090] bg-[rgba(31,33,34,0.95)] px-3 py-1 rounded-full text-base font-medium ">
                       {card.streaming}
