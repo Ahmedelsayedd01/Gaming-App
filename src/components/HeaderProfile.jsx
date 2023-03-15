@@ -1,6 +1,6 @@
 import React from "react";
 import Profile from "../assets/images/profile.jpg";
-import { Link } from "react-router-dom";
+import Button from "./Button";
 const HeaderProfile = () => {
   return (
     <div className="w-full flex sm:flex-col md:flex-row gap-y-5 md:gap-x-9 md:justify-between h-full border-b border-[#4c4d4e] sm:pb-2 md:pb-8">
@@ -21,9 +21,9 @@ const HeaderProfile = () => {
             You Haven't Gone Live yet. Go Live By Touching The Button Below.
           </p>
         </div>
-        <Link to={"/profile"} className="flex justify-start w-full">
-          <span className="btn ">Start Live Stream</span>
-        </Link>
+        <div className="flex justify-start w-full">
+          <Button link="/profile" name="Start Live Stream" />
+        </div>
       </div>
       {/* Right */}
       <div className="grid w-full grid-rows-4 gap-y-8 bg-[#27292a] rounded-3xl p-8 md:pb-0 mb-7">
