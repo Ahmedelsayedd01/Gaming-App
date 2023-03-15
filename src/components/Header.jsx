@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Button from "./Button";
 
 const Header = () => {
   return (
@@ -10,9 +10,7 @@ const Header = () => {
           <span className="text-[#ec6090]">BROWSE </span>
           OUR POPULAR GAMES HERE
         </h3>
-        <button className="btn">
-          <Link to={"/browse"}>Browse Now</Link>
-        </button>
+        <Button link="/browse" name="Browse Now" class="text-4xl" />
       </div>
       <div className="sm:hidden sl:block"></div>
     </div>
