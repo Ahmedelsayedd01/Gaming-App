@@ -2,25 +2,24 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Clips } from "../data";
 import { FaPlay, FaEye } from "react-icons/fa";
+import Title from "./Title";
+import Button from "./Button";
 
 const SectionClips = () => {
   return (
     <div className="flex items-center justify-center flex-col bg-transparent pb-5 rounded-3xl mx-auto">
       <div className="pt-6 w-full flex flex-col items-center justify-center">
-        <div className="flex mb-4 items-start w-full sl:text-4xl font-bold">
-          <h3 className="mr-1 underline decoration-2">Your Most Popular</h3>
-          <h4 className="text-[#ec6090]">Clips</h4>
-        </div>
+        <Title Text1="Your Most Popular" Text2="Clips" />
         <div className="w-full gap-5 pb-6 grid sm:grid-cols-1 sl:grid-cols-2 md:grid-cols-4 mt-5">
           {Clips.map((card) => (
-            <div className="bg-[#27292a] py-8 px-4 rounded-3xl">
+            <div className="bg-[#27292a] py-8 px-4 rounded-3xl" key={card.id}>
               {/* top */}
               <div className="">
                 <div className="relative ">
                   <img
                     src={card.image}
                     alt=""
-                    className="w-full h-full bg-cover bg-center rounded-3xl"
+                    className="w-full h-full rounded-3xl"
                   />
                   <Link
                     to={"https://www.youtube.com/watch?v=r1b03uKWk_M"}
@@ -56,9 +55,7 @@ const SectionClips = () => {
         </div>
 
         <div className="p-3">
-          <button className="btn">
-            <Link to={"/profile"}>Load More Clips</Link>
-          </button>
+          <Button link="/profile" name="Load More Clips" />
         </div>
       </div>
     </div>
