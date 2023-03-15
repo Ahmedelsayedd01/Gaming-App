@@ -11,15 +11,7 @@ const Profile = () => {
             <HeaderProfile />
             <SectionClips />
           </div>
-          <div className="">
-            <SectionLibrary />
-          </div>
-
-          <div className="flex sm:flex-col md:flex-row md:gap-x-5 w-full items-center md:justify-between ">
-            <div className="sm:w-full md:w-4/6">{/* <LiveProfile /> */}</div>
-            <div className="sm:w-full md:w-2/6">{/* <TopProfile /> */}</div>
-          </div>
-          {/* <MostStreamers /> */}
+          <SectionLibrary />
         </div>
       </div>
     </>
