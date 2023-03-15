@@ -10,14 +10,14 @@ const HeaderDetails = () => {
         <img
           src={featureLeft}
           alt=""
-          className="w-full h-full bg-cover bg-center rounded-3xl"
+          className="w-full h-full rounded-3xl"
         />
       </div>
       <div className="relative sl:w-8/12">
         <img
           src={featureRight}
           alt=""
-          className="w-full h-full bg-cover bg-center rounded-3xl"
+          className="w-full h-full rounded-3xl"
         />
         <Link
           to={"https://www.youtube.com/watch?v=r1b03uKWk_M"}
