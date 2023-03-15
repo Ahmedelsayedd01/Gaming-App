@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { LiveStreamContent } from "../data";
+import Title from "./Title";
 
 const SectionLiveStream = () => {
   return (
     <div className="bg-transparent mx-auto sm:mb-14 md:mb-0">
       <div className="w-full flex flex-col items-center justify-center">
-        <div className=" flex  py-12 items-start justify-center w-full sm:text-2xl sl:text-4xl flex-wrap font-bold">
-          <h3 className="mr-1 underline decoration-2">How To Start Your</h3>
-          <h4 className="text-[#ec6090]">Live  Stream</h4>
+        <div className="py-12">
+          <Title Text1="How To Start Your" Text2="Live Stream" />
         </div>
         <div className="flex sm:flex-col md:flex-row gap-5">
           {LiveStreamContent.map((card) => (

@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const SelectionDetails = () => {
   return (
     <>
-      <div className="flex items-center justify-center my-12">
+      <div className="w-full flex items-center justify-center my-12">
         <h3 className="text-5xl font-bold">FORTNITE DETAILS</h3>
       </div>
       <div className="w-full flex items-center justify-center flex-col bg-[#1f2122] rounded-3xl mx-auto  p-7">
@@ -83,21 +83,9 @@ const SelectionDetails = () => {
         <div className="flex flex-col items-center justify-center gap-8">
           {/* top */}
           <div className="w-full grid sm:grid-cols-1 sl:grid-cols-2 md:grid-cols-3 place-items-center gap-6 ">
-            <img
-              src={Details1}
-              alt=""
-              className="w-full rounded-3xl bg-cover bg-center"
-            />
-            <img
-              src={Details2}
-              alt=""
-              className="w-full rounded-3xl bg-cover bg-center"
-            />
-            <img
-              src={Details3}
-              alt=""
-              className="w-full rounded-3xl bg-cover bg-center"
-            />
+            <img src={Details1} alt="" className="w-full rounded-3xl" />
+            <img src={Details2} alt="" className="w-full rounded-3xl" />
+            <img src={Details3} alt="" className="w-full rounded-3xl" />
           </div>
           {/* center */}
           <div className="w-full flex items-center justify-center flex-wrap">
@@ -117,7 +105,10 @@ const SelectionDetails = () => {
             </p>
           </div>
           {/* bottom */}
-          <Link className="w-full btn flex item-center justify-center ">
+          <Link
+            to={"/details"}
+            className="w-full btn flex item-center justify-center "
+          >
             Download Fortnite Now!
           </Link>
         </div>
