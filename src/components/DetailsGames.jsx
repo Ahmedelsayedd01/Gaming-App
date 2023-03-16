@@ -1,19 +1,33 @@
 import React from "react";
-import { AiFillStar } from "react-icons/ai";
-import { FaDownload } from "react-icons/fa";
 import { DetailsItem } from "../data";
+import DetailsCard from "./DetailsCard";
 import Title from "./Title";
 
 const DetailsGames = () => {
   return (
-    <div className="w-full flex items-center justify-center flex-col bg-[#1f2122] rounded-3xl mx-auto mt-16">
+    <div
+      className="w-full flex items-center justify-center flex-col bg-[#1f2122] rounded-3xl mx-auto mt-16"
+      data-aos="fade-up"
+      data-aos-delay="500"
+      data-aos-offset="150"
+    >
       <div className="px-5 w-full flex flex-col items-center justify-center py-8">
-        <Title Text1="Other Related" Text2="Games" />
+        <div
+          className="w-full"
+          data-aos="fade-down"
+          data-aos-delay="600"
+          data-aos-offset="150"
+        >
+          <Title Text1="Other Related" Text2="Games" />
+        </div>
         <div className=" w-full grid sm:grid-cols-1 sl:grid-cols-2 gap-x-5">
           {DetailsItem.map((item) => (
             <div
               className="flex justify-between item-center w-full border-b border-[#4c4d4e] py-6 "
               key={item.id}
+              data-aos="fade-up"
+              data-aos-delay="700"
+              data-aos-offset="150"
             >
               {/* Left */}
               <div className="">
@@ -28,24 +42,7 @@ const DetailsGames = () => {
               </div>
               {/* Right */}
               <div className="flex items-center justify-center">
-                <ul>
-                  <li>
-                    <ul className="flex items-center  text-white text-base font-light">
-                      <li className="text-yellow-300 mr-1">
-                        <AiFillStar />
-                      </li>
-                      <li>{item.rate}</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul className="flex items-center text-white text-base font-light mt-2">
-                      <li className="text-[#ec6090] mr-1">
-                        <FaDownload />
-                      </li>
-                      <li>{item.download}</li>
-                    </ul>
-                  </li>
-                </ul>
+                <DetailsCard rate={item.rate} download={item.download} />
               </div>
             </div>
           ))}
