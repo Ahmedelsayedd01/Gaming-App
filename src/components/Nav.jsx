@@ -6,6 +6,8 @@ import { HiMenuAlt3 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link, NavLink } from "react-router-dom";
 import { useState } from "react";
+import LinkDesk from "./LinkDesk";
+import LinkMobile from "./LinkMobile";
 
 const Nav = () => {
   const [open, setOpen] = useState(true);
@@ -19,6 +21,7 @@ const Nav = () => {
     setOpen(true);
     setClose(true);
   };
+
   return (
     <nav className=" sm:sticky md:relative top-0 z-50">
       <div className="relative flex items-center sm:flex-col md:flex-row mx-auto md:w-10/12  sm:w-full  md:px-0  justify-between z-40">
@@ -59,35 +62,15 @@ const Nav = () => {
           </div>
 
           <div className="flex items-center justify-between gap-x-6 sm:hidden md:flex">
-            <NavLink
-              to={"/"}
-              className="text-[#666] font-medium transition-all ease-in-out duration-300 hover:text-[#e75e8d] hover: focus:text-[#e75e8d] py-2 "
-            >
-              Home
-            </NavLink>
-            <NavLink
-              to={"/browse"}
-              className="text-[#666] font-medium transition-all ease-in-out duration-300 hover:text-[#e75e8d] focus:text-[#e75e8d] py-2"
-            >
-              Browse
-            </NavLink>
-            <NavLink
-              to={"/details"}
-              className="text-[#666] font-medium transition-all ease-in-out duration-300 hover:text-[#e75e8d] focus:text-[#e75e8d] py-2"
-            >
-              Details
-            </NavLink>
-            <NavLink
-              to={"/streams"}
-              className="text-[#666] font-medium transition-all ease-in-out duration-300 hover:text-[#e75e8d] focus:text-[#e75e8d] py-2"
-            >
-              streams
-            </NavLink>
+            <LinkDesk link="/" name="Home" />
+            <LinkDesk link="/browse" name="Browse" />
+            <LinkDesk link="/details" name="Details" />
+            <LinkDesk link="/streams" name="Streams" />
             <NavLink
               to={"/profile"}
-              className="flex items-center hover:text-white group transition-all ease-in-out duration-300 focus:text-[#e75e8d] px-3 h-12 rounded-3xl bg-[#27292a] hover:bg-[#e75e8d]"
+              className="flex items-center group transition-all ease-in-out duration-300  hover:bg-[#e75e8d] focus:text-white focus:bg-[#e75e8d]  px-3 h-12 rounded-3xl bg-[#27292a]"
             >
-              <h2 className="text-[#666] group-hover:text-white transition-all ease-in-out duration-300 mr-2">
+              <h2 className="text-[#666] group-hover:text-white group-focus:text-white transition-all ease-in-out duration-300 mr-2">
                 Profile
               </h2>
               <img src={profile} alt="" className="rounded-full" />
@@ -102,30 +85,11 @@ const Nav = () => {
             }}`}
             onClick={toggle2}
           >
-            <NavLink
-              to={"/"}
-              className="flex items-center justify-center text-[#666] font-medium transition-all ease-in-out duration-300 hover:text-[#e75e8d] focus:text-[#e75e8d] py-6 border-b w-full"
-            >
-              Home
-            </NavLink>
-            <NavLink
-              to={"/browse"}
-              className="flex items-center justify-center text-[#666] font-medium transition-all ease-in-out duration-300 hover:text-[#e75e8d] focus:text-[#e75e8d] py-6 border-b w-full"
-            >
-              Browse
-            </NavLink>
-            <NavLink
-              to={"/details"}
-              className="flex items-center justify-center text-[#666] font-medium transition-all ease-in-out duration-300 hover:text-[#e75e8d] focus:text-[#e75e8d] py-6 border-b w-full"
-            >
-              Details
-            </NavLink>
-            <NavLink
-              to={"/streams"}
-              className="flex items-center justify-center text-[#666] font-medium transition-all ease-in-out duration-300 hover:text-[#e75e8d] focus:text-[#e75e8d] py-6 border-b w-full"
-            >
-              streams
-            </NavLink>
+            <LinkMobile link="/" name="Home" />
+            <LinkMobile link="/browse" name="Browse" />
+            <LinkMobile link="/details" name="Details" />
+            <LinkMobile link="/streams" name="Streams" />
+
             <NavLink
               to={"/profile"}
               className="flex items-center h-full justify-center rounded-3xl bg-[#e75e8d] text-white font-medium transition-all ease-in-out duration-300 hover:text-[#e75e8d] hover:bg-white focus:text-[#e75e8d] py-6 border-b w-full"
