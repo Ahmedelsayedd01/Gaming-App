@@ -1,21 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Footer from "./components/Footer";
-import Nav from "./components/Nav";
+
+import Nav from "./components/navbar/Nav";
+import Home from "./pages/Home";
 import Browse from "./pages/Browse";
 import Details from "./pages/Details";
-import Home from "./pages/Home";
-import Profile from "./pages/Profile";
 import Streams from "./pages/Streams";
+import Profile from "./pages/Profile";
+import Footer from "./components/footer/Footer";
+import NotFound from "./pages/NotFound";
+
+/* Import Animation Library */
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const router = createBrowserRouter([
+  {
+    path: "*",
+    element: <NotFound />,
+  },
   {
     path: "/",
     element: (
       <>
         <Nav />
         <Home />
-        <Footer />
       </>
     ),
   },
@@ -25,7 +34,6 @@ const router = createBrowserRouter([
       <>
         <Nav />
         <Browse />
-        <Footer />
       </>
     ),
   },
@@ -35,7 +43,6 @@ const router = createBrowserRouter([
       <>
         <Nav />
         <Details />
-        <Footer />
       </>
     ),
   },
@@ -45,7 +52,6 @@ const router = createBrowserRouter([
       <>
         <Nav />
         <Streams />
-        <Footer />
       </>
     ),
   },
@@ -55,15 +61,22 @@ const router = createBrowserRouter([
       <>
         <Nav />
         <Profile />
-        <Footer />
       </>
     ),
   },
 ]);
 function App() {
+  useEffect(() => {
+    Aos.init({
+      duration: 2500,
+      delay: 400,
+    });
+  });
+
   return (
     <>
       <RouterProvider router={router} />
+      <Footer />
     </>
   );
 }
