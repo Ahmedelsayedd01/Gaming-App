@@ -117,7 +117,7 @@ export const RightNow = [
     download: "2.3M",
   },
 ];
-export const Library = [
+export const SectionLibrary = [
   {
     id: 1,
     image: Library1,
@@ -178,7 +178,7 @@ export const FeaturedGames = [
     download: "2.3M",
   },
 ];
-export const TopDownloaded = [
+export const SectionTopDownloaded = [
   {
     id: 1,
     image: popular1,
@@ -397,7 +397,7 @@ export const Streamers = [
     title: "Live Streaming Till Morning",
   },
 ];
-export const Clips = [
+export const SectionClips = [
   {
     id: 1,
     image: Clips1,
