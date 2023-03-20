@@ -1,5 +1,6 @@
 import React from "react";
 import { TopStreamers } from "../../data";
+/* Import Components */
 import StreamersName from "../detailsCard/StreamerName";
 import Title from "../piecesOfComponent/Title";
 import Button from "../piecesOfComponent/Button";
@@ -7,7 +8,7 @@ import Button from "../piecesOfComponent/Button";
 const TopStreams = () => {
   return (
     <div
-      className="bg-[#1f2122] rounded-3xl mx-auto  sm:mb-14 md:mb-0"
+      className="bg-[#1f2122] rounded-3xl mx-auto sm:mb-14 md:mb-0"
       data-aos="fade-left"
       data-aos-delay="500"
       data-aos-offset="150"
@@ -30,7 +31,7 @@ const TopStreams = () => {
                   <h3 className="font-bold">0{card.number}</h3>
                 </div>
                 <div className="">
-                  <img src={card.image} alt="" className="rounded-full" />
+                  <img src={card.image} alt={card.name} className="rounded-full" />
                 </div>
                 <div className="">
                   <StreamersName name={card.name} />
