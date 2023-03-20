@@ -1,7 +1,9 @@
 import React from "react";
+/* Import Components */
 import Carousel from "../piecesOfComponent/Carousel";
-import { MdNavigateNext, MdOutlineNavigateBefore } from "react-icons/md";
 import Title from "../piecesOfComponent/Title";
+/* Import Icons */
+import { MdNavigateNext, MdOutlineNavigateBefore } from "react-icons/md";
 const LiveStreams = () => {
   return (
     <div
