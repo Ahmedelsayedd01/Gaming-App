@@ -1,6 +1,8 @@
 import React from "react";
+/* Import Components */
 import Button from "../piecesOfComponent/Button";
 import Title from "../piecesOfComponent/Title";
+/* Import Section */
 import LiveGames from "./LiveGames";
 
 const LiveStream = () => {
