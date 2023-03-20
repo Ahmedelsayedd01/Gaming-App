@@ -1,5 +1,7 @@
 import React from "react";
+/* Import data */
 import { LiveStreamGames } from "../../data";
+/* Import Components */
 import ActiveStreamers from "../detailsCard/ActiveStreamers";
 import Live from "../detailsCard/Live";
 import StreamerName from "../detailsCard/StreamerName";
@@ -18,7 +20,7 @@ const LiveGames = () => {
             data-aos-offset="150"
           >
             {/* Card Image */}
-            <img src={card.image} alt="" className="rounded-3xl w-full" />
+            <img src={card.image} alt={card.name} className="rounded-3xl w-full" />
             <div className="opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-500">
               <Live link="/browse" name="Live" />
               <ActiveStreamers link="/browse" view="1.2K" name="CS-GO" />
