@@ -1,5 +1,7 @@
 import React from "react";
+/* Import Data */
 import { SectionClips } from "../../data";
+/* Import Components */
 import Title from "../piecesOfComponent/Title";
 import Button from "../piecesOfComponent/Button";
 import Eye from "../detailsCard/Eye";
@@ -27,7 +29,7 @@ const Clips = () => {
                 <div className="relative ">
                   <img
                     src={card.image}
-                    alt=""
+                    alt={card.name}
                     className="w-full h-full rounded-3xl"
                   />
                   <PlayVideo />
