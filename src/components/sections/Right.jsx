@@ -7,7 +7,7 @@ import Card from "../piecesOfComponent/Card";
 const Right = () => {
   return (
     <div className="flex items-center justify-center flex-col bg-[#1f2122] rounded-3xl mx-auto p-4 mt-16">
-      <div className="px-5 py-5 w-full flex flex-col items-center justify-center">
+      <div className="w-full flex flex-col items-center justify-center px-5 py-5 ">
         {/* Title Section */}
         <div
           className="w-full"
