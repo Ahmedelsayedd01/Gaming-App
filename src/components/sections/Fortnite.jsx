@@ -1,9 +1,11 @@
 import React from "react";
+/* Import Components */
 import TopFortnite from "../piecesOfComponent/TopFortnite.jsx";
 import Details1 from "../../assets/images/details-01.jpg";
 import Details2 from "../../assets/images/details-02.jpg";
 import Details3 from "../../assets/images/details-03.jpg";
 import Images from "../piecesOfComponent/Images.jsx";
+/* Import Link */
 import { Link } from "react-router-dom";
 
 const Fortnite = () => {
