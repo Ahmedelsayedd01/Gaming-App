@@ -1,9 +1,9 @@
 import React from "react";
 /* Import Section */
 import Title from "../piecesOfComponent/Title";
+import TopDownload from "../piecesOfComponent/TopDownload";
 /* Import Link */
 import { Link } from "react-router-dom";
-import TopDownload from "../piecesOfComponent/TopDownload";
 
 const TopDownloaded = () => {
   return (
