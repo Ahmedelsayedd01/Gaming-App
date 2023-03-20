@@ -31,6 +31,7 @@ const BrowseGames = () => {
         <div className="w-full relative">
           <Carousel />
         </div>
+        
       </div>
     </div>
   );
