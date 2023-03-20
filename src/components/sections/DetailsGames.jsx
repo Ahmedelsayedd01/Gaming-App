@@ -1,5 +1,7 @@
 import React from "react";
+/* Import Data */
 import { DetailsItem } from "../../data";
+/* Import Components */
 import DetailsCard from "../detailsCard/DetailsCard";
 import Title from "../piecesOfComponent/Title";
 
