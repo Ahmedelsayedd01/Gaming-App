@@ -1,6 +1,7 @@
 import React from "react";
 import { Streamers } from "../../data";
 import Live from "../detailsCard/Live";
+/* Import Components */
 import Button from "../piecesOfComponent/Button";
 import Title from "../piecesOfComponent/Title";
 import ActiveStreamers from "../detailsCard/ActiveStreamers";
@@ -43,7 +44,7 @@ const MostLiveStream = () => {
                 <div>
                   <img
                     src={card.profileImg}
-                    alt=""
+                    alt={card.name}
                     className="rounded-full w-14"
                   />
                 </div>
