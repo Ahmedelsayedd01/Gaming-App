@@ -30,7 +30,7 @@ const StartLive = () => {
               key={card.id}
             >
               {/* Card Image */}
-              <img src={card.image} alt="" className="rounded-full" />
+              <img src={card.image} alt={card.name} className="rounded-full" />
               {/* Card Name */}
               <div className="text-xl font-medium">{card.name}</div>
               {/* Card Title */}
