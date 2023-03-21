@@ -4,7 +4,7 @@ const Images = (props) => {
     <div className="w-full grid sm:grid-cols-1 sl:grid-cols-2 md:grid-cols-3 place-items-center gap-6 ">
       <img
         src={props.img1}
-        alt=""
+        alt="FORTNITE"
         className="w-full rounded-3xl"
         data-aos="fade-right"
         data-aos-delay="800"
@@ -12,7 +12,7 @@ const Images = (props) => {
       />
       <img
         src={props.img2}
-        alt=""
+        alt="FORTNITE"
         className="w-full rounded-3xl"
         data-aos="fade-up"
         data-aos-delay="400"
@@ -20,7 +20,7 @@ const Images = (props) => {
       />
       <img
         src={props.img3}
-        alt=""
+        alt="FORTNITE"
         className="w-full rounded-3xl"
         data-aos="fade-left"
         data-aos-delay="800"
