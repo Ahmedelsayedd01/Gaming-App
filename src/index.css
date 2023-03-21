@@ -20,3 +20,7 @@
 ::placeholder {
   color: #666;
 }
+::selection {
+  background-color: #e75e8d;
+  color: #fff;
+}
