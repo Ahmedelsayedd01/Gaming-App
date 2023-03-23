@@ -1,5 +1,7 @@
 import React from "react";
+/* Import Images */
 import Profile from "../../assets/images/profile.jpg";
+/* Import Components */
 import Button from "../piecesOfComponent/Button";
 const HeaderProfile = () => {
   return (
