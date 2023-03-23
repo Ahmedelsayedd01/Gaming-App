@@ -1,9 +1,13 @@
 import React from "react";
+/* Import Images */
 import profile from "../../assets/images/profile-header.jpg";
+/* Import Icons */
 import { HiMenuAlt3 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
-import { NavLink } from "react-router-dom";
+/* Import Hook */
+import * as reactRouterDom from "react-router-dom";
 import { useState } from "react";
+/* Import Components */
 import NavDesk from "./NavDesk";
 import NavMobile from "./NavMobile";
 
@@ -54,7 +58,7 @@ const Nav = () => {
             <NavDesk link="/browse" name="Browse" />
             <NavDesk link="/details" name="Details" />
             <NavDesk link="/streams" name="Streams" />
-            <NavLink
+            <reactRouterDom.NavLink
               to={"/profile"}
               className="flex items-center group transition-all ease-in-out duration-300  hover:bg-[#e75e8d] focus:text-white focus:bg-[#e75e8d]  px-3 h-12 rounded-3xl bg-[#27292a]"
             >
@@ -62,7 +66,7 @@ const Nav = () => {
                 Profile
               </h2>
               <img src={profile} alt="" className="rounded-full" />
-            </NavLink>
+            </reactRouterDom.NavLink>
           </div>
         </div>
         {/* Mobile Nav */}
@@ -78,12 +82,12 @@ const Nav = () => {
             <NavMobile link="/details" name="Details" />
             <NavMobile link="/streams" name="Streams" />
 
-            <NavLink
+            <reactRouterDom.NavLink
               to={"/profile"}
               className="flex items-center h-full justify-center rounded-3xl bg-[#e75e8d] text-white font-medium transition-all ease-in-out duration-300 hover:text-[#e75e8d] hover:bg-white focus:text-[#e75e8d] py-6 border-b w-full"
             >
               Profile
-            </NavLink>
+            </reactRouterDom.NavLink>
           </div>
         )}
       </div>
