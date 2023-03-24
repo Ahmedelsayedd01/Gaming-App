@@ -29,7 +29,7 @@ import profile1 from "./assets/images/avatar-01.jpg";
 import profile2 from "./assets/images/avatar-02.jpg";
 import profile3 from "./assets/images/avatar-03.jpg";
 import profile4 from "./assets/images/avatar-04.jpg";
-
+/* Import Photo game From Images  */
 import DetailsItem1 from "./assets/images/game-01.jpg";
 import DetailsItem2 from "./assets/images/game-02.jpg";
 import DetailsItem3 from "./assets/images/game-03.jpg";
