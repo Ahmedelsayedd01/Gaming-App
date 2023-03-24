@@ -36,7 +36,7 @@ import DetailsItem3 from "./assets/images/game-03.jpg";
 import DetailsItem4 from "./assets/images/game-02.jpg";
 import DetailsItem5 from "./assets/images/game-03.jpg";
 import DetailsItem6 from "./assets/images/game-01.jpg";
-
+/* Import Photo stream From Images  */
 import Streamers1 from "./assets/images/stream-01.jpg";
 import Streamers2 from "./assets/images/stream-02.jpg";
 import Streamers3 from "./assets/images/stream-03.jpg";
