@@ -11,7 +11,7 @@ import popular8 from "./assets/images/popular-08.jpg";
 import Library1 from "./assets/images/game-01.jpg";
 import Library2 from "./assets/images/game-02.jpg";
 import Library3 from "./assets/images/game-03.jpg";
-
+/* Import Photo Featured From Images  */
 import Featured1 from "./assets/images/featured-01.jpg";
 import Featured2 from "./assets/images/featured-02.jpg";
 import Featured3 from "./assets/images/featured-03.jpg";
