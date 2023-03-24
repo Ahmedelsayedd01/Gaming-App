@@ -45,7 +45,7 @@ import Streamers5 from "./assets/images/stream-05.jpg";
 import Streamers6 from "./assets/images/stream-06.jpg";
 import Streamers7 from "./assets/images/stream-07.jpg";
 import Streamers8 from "./assets/images/stream-08.jpg";
-
+/* Import Photo clip From Images  */
 import Clips1 from "./assets/images/clip-01.jpg";
 import Clips2 from "./assets/images/clip-02.jpg";
 import Clips3 from "./assets/images/clip-03.jpg";
