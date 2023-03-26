@@ -40,6 +40,9 @@ const Carousel = () => {
             <DescribeCard name={card.name} title={card.title} />
             <DetailsCard rate={card.rate} download={card.download} />
           </div>
+
+
+          
         </SwiperSlide>
       ))}
       {FeaturedGames.map((card) => (
