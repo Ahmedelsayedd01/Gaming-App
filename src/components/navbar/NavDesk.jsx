@@ -10,9 +10,6 @@ const NavDesk = (props) => {
     >
       {props.name}
     </NavLink>
-
-
-
   );
 };
 
