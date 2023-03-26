@@ -8,10 +8,6 @@ const Live = (props) => {
         {props.name}
       </Link>
     </div>
-
-
-
-
   );
 };
 

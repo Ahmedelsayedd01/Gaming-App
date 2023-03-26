@@ -7,9 +7,6 @@ const Rate = (props) => {
       <StarIcon />
       <li>{props.rate}</li>
     </ul>
-
-
-
   );
 };
 
