@@ -12,9 +12,6 @@ const Streams = () => {
             <div className="sm:w-full md:w-4/6 overflow-hidden">
               <LiveStreams />
             </div>
-
-
-            
             <div className="sm:w-full md:w-2/6 overflow-hidden">
               <TopStreams />
             </div>
