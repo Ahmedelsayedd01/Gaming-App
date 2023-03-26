@@ -4,6 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 @layer base {
+
+
+  
   body {
     @apply bg-[#1f2122] font-poppins text-white;
   }
