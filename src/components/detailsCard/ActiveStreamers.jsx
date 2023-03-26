@@ -4,6 +4,9 @@ import { IoLogoGameControllerA } from "react-icons/io";
 import { Link } from "react-router-dom";
 
 const ActiveStreamers = (props) => (
+
+
+  
   <div className="absolute bottom-4 w-full flex items-center justify-center gap-x-3">
     <Link
       to={props.link}
