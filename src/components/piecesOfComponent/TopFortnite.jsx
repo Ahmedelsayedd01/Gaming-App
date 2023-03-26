@@ -10,6 +10,9 @@ const TopFortnite = () => {
   return (
     <div className="w-full flex md:flex-row sm:flex-col  items-center justify-between sm:gap-y-7 md:gap-4 mb-7">
       {/* Left Section*/}
+
+
+      
       <div
         className="bg-[#27292a] flex items-center justify-between  w-full p-7 rounded-3xl"
         data-aos="fade-right"
