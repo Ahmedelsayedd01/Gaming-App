@@ -376,16 +376,12 @@ export const Streamers = [
     title: "Just Talking With Fans",
   },
   {
-
-    
     id: 6,
     image: Streamers6,
     profileImg: profile2,
     name: "LahutaMalc",
     title: "CS-GO 36 Hours Live Stream",
   },
-
-
   {
     id: 7,
     image: Streamers7,
@@ -424,8 +420,6 @@ export const SectionClips = [
     id: 4,
     image: Clips4,
     name: "Fourth Clip",
-
-
     number: 91,
   },
 ];
