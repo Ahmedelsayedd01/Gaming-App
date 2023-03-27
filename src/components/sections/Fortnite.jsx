@@ -28,6 +28,7 @@ const Fortnite = () => {
       >
         {/* Top Section */}
         <TopFortnite />
+        
         {/* Center Section */}
         <div className="flex flex-col items-center justify-center gap-8">
           <Images img1={Details1} img2={Details2} img3={Details3} />
