@@ -35,6 +35,7 @@ const Clips = () => {
                   <PlayVideo />
                 </div>
               </div>
+              
               {/* bottom */}
               <div className="flex item-center mt-5 ">
                 <ul className="w-full flex items-center justify-between">
