@@ -39,6 +39,7 @@ const DetailsGames = () => {
                 <img src={item.image} alt="" className="rounded-2xl" />
               </div>
               {/* Center */}
+              
               <div className="flex items-center justify-start w-3/4 ml-2">
                 {/* Card Name And Title */}
                 <ul>
