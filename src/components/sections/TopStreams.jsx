@@ -31,7 +31,11 @@ const TopStreams = () => {
                   <h3 className="font-bold">0{card.number}</h3>
                 </div>
                 <div className="">
-                  <img src={card.image} alt={card.name} className="rounded-full" />
+                  <img
+                    src={card.image}
+                    alt={card.name}
+                    className="rounded-full"
+                  />
                 </div>
                 <div className="">
                   <StreamersName name={card.name} />
