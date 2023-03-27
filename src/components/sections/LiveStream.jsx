@@ -21,6 +21,7 @@ const LiveStream = () => {
       >
         {/* Section Title */}
         <Title Text1="Most Popular" Text2="Live Stream" />
+        
         {/* Live Stream */}
         <LiveGames />
         {/* Button */}
