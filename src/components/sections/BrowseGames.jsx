@@ -13,7 +13,6 @@ const BrowseGames = () => {
       data-aos-anchor-placement="top-center"
     >
       <div className="relative w-full flex flex-col items-center justify-center">
-        
         {/* Header Section (Title && Navigate) */}
         <div className=" flex pb-4 mb-3 items-start justify-between  w-full text-3xl font-bold">
           <Title Text1="Featured" Text2="Games" />
@@ -31,7 +30,6 @@ const BrowseGames = () => {
         <div className="w-full relative">
           <Carousel />
         </div>
-        
       </div>
     </div>
   );
