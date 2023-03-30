@@ -48,7 +48,7 @@ const MostLiveStream = () => {
                     className="rounded-full w-14"
                   />
                 </div>
-                
+
                 {/* Right Div */}
                 <div className="flex flex-col ml-3 items-start justify-start">
                   <StreamerName name={card.name} />
