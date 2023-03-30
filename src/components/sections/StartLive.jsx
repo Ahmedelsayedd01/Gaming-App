@@ -43,7 +43,7 @@ const StartLive = () => {
             </div>
           ))}
         </div>
-        
+
         {/* Button */}
         <div className="mt-10" data-aos="fade-up" data-aos-delay="600">
           <Button link="/profile" name="Go To Profile" />
